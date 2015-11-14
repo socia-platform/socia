@@ -196,7 +196,7 @@ public class PostController extends BaseController {
 
 	@Transactional
 	public static List<Post> getComments(Long id, int limit) {
-		//int max = Integer.parseInt(Play.application().configuration().getString("htwplus.comments.init"));
+		//int max = Integer.parseInt(Play.application().configuration().getString("socia.comments.init"));
 		int offset = 0;
 		if(limit != 0){
 			offset = Post.countCommentsForPost(id) - limit;
@@ -216,7 +216,7 @@ public class PostController extends BaseController {
 		String result = "";
 		
 		// subtract already displayed comments
-		int limit = Post.countCommentsForPost(id) - Integer.parseInt(Play.application().configuration().getString("htwplus.comments.init"));
+		int limit = Post.countCommentsForPost(id) - Integer.parseInt(Play.application().configuration().getString("socia.comments.init"));
 		
 		List<Post> comments;
 		comments = Post.getCommentsForPost(id, limit, 0);

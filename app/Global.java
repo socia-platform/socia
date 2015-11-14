@@ -67,7 +67,7 @@ public class Global extends GlobalSettings {
         Logger.info("trying to connect to Elasticsearch");
         if (ElasticsearchService.isClientAvailable()) {
             Logger.info("... success");
-            Logger.info("trying to create HTWPlus index and mapping");
+            Logger.info("trying to create Socia index and mapping");
             if (!ElasticsearchService.isIndexExists()) {
                 ElasticsearchService.createAnalyzer();
                 ElasticsearchService.createMapping();
@@ -139,11 +139,11 @@ public class Global extends GlobalSettings {
 		JPA.withTransaction(new play.libs.F.Callback0() {
 			@Override
 			public void invoke() throws Throwable {
-                Group group = Group.findByTitle(play.Play.application().configuration().getString("htwplus.admin.group"));
+                Group group = Group.findByTitle(play.Play.application().configuration().getString("socia.admin.group"));
                 if(group != null){
                     Post p = new Post();
                     p.content = "Request: "+rh+"\nError: "+t;
-                    p.owner = Account.findByEmail(play.Play.application().configuration().getString("htwplus.admin.mail"));
+                    p.owner = Account.findByEmail(play.Play.application().configuration().getString("socia.admin.mail"));
                     p.group = group;
                     p.create();
                 }
@@ -162,12 +162,12 @@ public class Global extends GlobalSettings {
 	static class InitialData {
 		public static void insert(Application app) {
 			
-			final String adminGroupTitle = app.configuration().getString("htwplus.admin.group");
-			final String adminMail = app.configuration().getString("htwplus.admin.mail");
-			final String adminPassword = app.configuration().getString("htwplus.admin.pw");
+			final String adminGroupTitle = app.configuration().getString("socia.admin.group");
+			final String adminMail = app.configuration().getString("socia.admin.mail");
+			final String adminPassword = app.configuration().getString("socia.admin.pw");
 
-            final String dummyMail = app.configuration().getString("htwplus.dummy.mail");
-            final String dummyPassword = app.configuration().getString("htwplus.dummy.pw");
+            final String dummyMail = app.configuration().getString("socia.dummy.mail");
+            final String dummyPassword = app.configuration().getString("socia.dummy.pw");
             
 			// Do some inital db stuff
 			JPA.withTransaction(new play.libs.F.Callback0() {
@@ -179,7 +179,7 @@ public class Global extends GlobalSettings {
                         admin = new Account();
                         admin.email = adminMail;
                         admin.firstname = "Admin";
-                        admin.lastname = "@HTWplus";
+                        admin.lastname = "@Socia";
                         admin.role = AccountRole.ADMIN;
                         admin.avatar = "a1";
                         admin.password = Component.md5(adminPassword);
@@ -209,15 +209,15 @@ public class Global extends GlobalSettings {
                         group = new Group();
                         group.title = adminGroupTitle;
                         group.groupType = GroupType.close;
-                        group.description = "for HTWplus Admins only";
+                        group.description = "for Socia Admins only";
                         group.createWithGroupAccount(admin);
                     }
 
                     // create Feedback group if none exists
-                    Group feedbackGroup = Group.findByTitle("HTWplus Feedback");
+                    Group feedbackGroup = Group.findByTitle("Socia Feedback");
                     if (feedbackGroup == null) {
                         group = new Group();
-                        group.title = "HTWplus Feedback";
+                        group.title = "Socia Feedback";
                         group.groupType = GroupType.open;
                         group.description = "Du hast Wünsche, Ideen, Anregungen, Kritik oder Probleme mit der Seite? Hier kannst du es loswerden!";
                         group.createWithGroupAccount(admin);

@@ -12,4 +12,4 @@
 @notification.rendered.replaceAll("\\<[^>]*>", "")
 }}
 Seite besuchen:
-@defining(ConfigFactory.load().getString("htwplus.base_url")) { baseURL =>@if(notifications.size > 1) {@baseURL@controllers.routes.NotificationController.showAll(1)} else {@baseURL@controllers.routes.NotificationController.forward(notifications(0).id)}}
+@defining(ConfigFactory.load().getString("socia.base_url")) { baseURL =>@if(notifications.size > 1) {@baseURL@controllers.routes.NotificationController.showAll(1)} else {@baseURL@controllers.routes.NotificationController.forward(notifications(0).id)}}

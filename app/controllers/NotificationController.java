@@ -16,7 +16,7 @@ import views.html.Notification.view;
 @Transactional
 @Security.Authenticated(Secured.class)
 public class NotificationController extends BaseController {
-    static final int LIMIT = Integer.parseInt(Play.application().configuration().getString("htwplus.notification.limit"));
+    static final int LIMIT = Integer.parseInt(Play.application().configuration().getString("socia.notification.limit"));
 
     /**
      * @deprecated Deprecated since refactor of notification system

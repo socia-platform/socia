@@ -1,4 +1,4 @@
-name := "htwplus"
+name := "socia"
 
 version := "1.0-SNAPSHOT"
 

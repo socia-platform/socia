@@ -32,7 +32,7 @@ import play.mvc.Security;
 public class MediaController extends BaseController {
 	
 	static Form<Media> mediaForm = Form.form(Media.class);
-	final static String tempPrefix = "htwplus_temp";
+	final static String tempPrefix = "socia_temp";
 	
     @Transactional(readOnly=true)	
     public static Result view(Long id) {

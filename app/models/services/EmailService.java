@@ -18,7 +18,7 @@ import java.util.Map;
  * This class handles sending of emails, e.g. for notification mails.
  */
 public class EmailService {
-    static final String EMAIL_SENDER = Play.application().configuration().getString("htwplus.email.sender");
+    static final String EMAIL_SENDER = Play.application().configuration().getString("socia.email.sender");
     static final String PLAIN_TEXT_TEMPLATE = "views.html.Emails.notificationsPlainText";
     static final String HTML_TEMPLATE = "views.html.Emails.notificationsHtml";
 

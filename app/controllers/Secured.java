@@ -346,7 +346,7 @@ public class Secured extends Security.Authenticator {
             return true;
         }
 
-        int limit = ConfigFactory.load().getInt("htwplus.post.editTimeLimit"); // the limit in minutes
+        int limit = ConfigFactory.load().getInt("socia.post.editTimeLimit"); // the limit in minutes
         if (new Date(post.createdAt.getTime() + 1000 * 60 * limit).compareTo(new Date(System.currentTimeMillis())) < 0) { // older than X minutes ?
             return false;
         }
@@ -375,7 +375,7 @@ public class Secured extends Security.Authenticator {
             return true;
         }
 
-        int limit = ConfigFactory.load().getInt("htwplus.post.editTimeLimit") + ConfigFactory.load().getInt("htwplus.post.editTimeLimitTolerance"); // the limit in minutes
+        int limit = ConfigFactory.load().getInt("socia.post.editTimeLimit") + ConfigFactory.load().getInt("socia.post.editTimeLimitTolerance"); // the limit in minutes
         if (new Date(post.createdAt.getTime() + 1000 * 60 * limit).compareTo(new Date(System.currentTimeMillis())) < 0) { // older than X minutes ?
             return false;
         }

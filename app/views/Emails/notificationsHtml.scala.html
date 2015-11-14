@@ -2,7 +2,7 @@
 @import helper._
 @import com.typesafe.config.ConfigFactory
 
-@defining(ConfigFactory.load().getString("htwplus.base_url")) { baseURL=>
+@defining(ConfigFactory.load().getString("socia.base_url")) { baseURL=>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
@@ -19,7 +19,7 @@
         <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td> <!-- OUTER CONTAINER -->
             <table align="center" border="0" cellpadding="0" cellspacing="0" style="min-width: 450px; max-width:600px; border-collapse: collapse;"> <!-- INNER CONTAINER -->
                 <tr><td bgcolor="#FFA500" align="center" colspan="2" style="font-size: 50px; font-weight: bold; color: white; line-height: 146px;">
-                    <a href="@baseURL@controllers.routes.Application.index()" style="color:white;text-decoration: none"><img alt="HTWplus" src="https://plus.f4.htw-berlin.de/assets/images/logos/logo-white.svg" width="227" height="146" style="display:block"></a>
+                    <a href="@baseURL@controllers.routes.Application.index()" style="color:white;text-decoration: none"><img alt="Socia" src="https://plus.f4.htw-berlin.de/assets/images/logos/logo-white.svg" width="227" height="146" style="display:block"></a>
                 </td></tr>
 
                 <tr align="left" style="text-align: left"><td colspan="2" style="padding: 15px 10px 5px 10px"><p>

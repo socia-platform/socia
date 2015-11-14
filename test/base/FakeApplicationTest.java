@@ -110,7 +110,7 @@ public abstract class FakeApplicationTest {
      * @return Account instance
      */
     public Account getTestAccount(final int number) {
-        final String testAccountEmail = "test" + String.valueOf(number) + "@htwplus.de";
+        final String testAccountEmail = "test" + String.valueOf(number) + "@socia.de";
         Account storedTestAccount = this.getAccountByEmail(testAccountEmail);
 
         // if there is this test account, return
@@ -147,7 +147,7 @@ public abstract class FakeApplicationTest {
      * @return Account instance
      */
     public Account getAdminAccount() {
-        String adminEmailAddress = FakeApplicationTest.getConfiguration("htwplus.admin.mail");
+        String adminEmailAddress = FakeApplicationTest.getConfiguration("socia.admin.mail");
         return this.getAccountByEmail(adminEmailAddress);
     }
 

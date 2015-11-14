@@ -37,7 +37,7 @@
                     </h2>
                     <br />
                     <br />
-                    @views.html.snippets.postView(post, postForm, models.Post.GROUP, Play.application().configuration().getInt("htwplus.comments.singlepost"))
+                    @views.html.snippets.postView(post, postForm, models.Post.GROUP, Play.application().configuration().getInt("socia.comments.singlepost"))
 
                 }
 
@@ -46,7 +46,7 @@
                     <h2>@post.account.name</h2>
                     <br />
                     <br />
-                    @views.html.snippets.postView(post, postForm, models.Post.PROFILE, Play.application().configuration().getInt("htwplus.comments.singlepost"))
+                    @views.html.snippets.postView(post, postForm, models.Post.PROFILE, Play.application().configuration().getInt("socia.comments.singlepost"))
                 }
             </div>
         </div>

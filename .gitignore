@@ -27,5 +27,5 @@ server.pid
 conf/application.conf
 public/media
 public/bower_components
-htwplus
+socia
 node_modules

@@ -38,7 +38,7 @@ import static java.util.Arrays.asList;
 public class Application extends BaseController {
 	
 	static Form<Post> postForm = Form.form(Post.class);
-	static final int LIMIT = ConfigFactory.load().getInt("htwplus.post.limit");
+	static final int LIMIT = ConfigFactory.load().getInt("socia.post.limit");
 	static final int PAGE = 1;
 
 	
@@ -180,11 +180,11 @@ public class Application extends BaseController {
 	public static Result addFeedback() {
 		
 		Account account = Component.currentAccount();
-		Group group = Group.findByTitle("HTWplus Feedback");
+		Group group = Group.findByTitle("Socia Feedback");
 		
 		// Guest case
 		if(account == null) {
-			account = Account.findByEmail(play.Play.application().configuration().getString("htwplus.admin.mail"));
+			account = Account.findByEmail(play.Play.application().configuration().getString("socia.admin.mail"));
 		}
 		
 		Form<Post> filledForm = postForm.bindFromRequest();

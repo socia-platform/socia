@@ -26,7 +26,7 @@ public class GroupController extends BaseController {
 
 	static Form<Group> groupForm = Form.form(Group.class);
 	static Form<Post> postForm = Form.form(Post.class);
-	static final int LIMIT = Integer.parseInt(Play.application().configuration().getString("htwplus.post.limit"));
+	static final int LIMIT = Integer.parseInt(Play.application().configuration().getString("socia.post.limit"));
 	static final int PAGE = 1;
 	
 	public static Result index() {

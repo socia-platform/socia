@@ -1,6 +1,6 @@
-# HTWplus
+# socia
 
-HTWplus is a straightforward and lightweight social network. It offers essential social networking functionalities: Friendships, groups, a personal newsfeed and file sharing. It is built with the Play Framework 2, PostgreSQL and Elasticsearch.
+Socia is a straightforward and lightweight social network. It offers essential social networking functionalities: Friendships, groups, a personal newsfeed and file sharing. It is built with the Play Framework 2, PostgreSQL and Elasticsearch.
 
 ## Installation
 
@@ -31,7 +31,7 @@ HTWplus is a straightforward and lightweight social network. It offers essential
 * Open the repository directory in shell
 * Execute `activator run` (`activator -jvm-debug 9999` for debug mode)
 * Browse to http://localhost:9000/
-* Login as admin (user: admin@htwplus.de, password: 123456)
+* Login as admin (user: admin@socia.de, password: 123456)
 
 ### Initialize Elasticsearch
 
