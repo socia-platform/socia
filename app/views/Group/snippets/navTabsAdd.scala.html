@@ -3,7 +3,7 @@
 <ul class="nav nav-tabs hp-nav-tabs pull-right">
 	@defining(if(Navigation.getTitle().equals("Übersicht")){"active"} else {"deactive"}) { status =>
 		<li class="@status">
-            <a href="@routes.GroupController.index()" role="button" class="btn btn-default active" rel="tooltip" data-original-title="Übersicht deiner Gruppen & Kurse" data-container="body">
+            <a href="@routes.GroupController.index()" role="button" class="btn btn-default active" rel="tooltip" data-original-title="Übersicht deiner Gruppen" data-container="body">
                 <span class="glyphicon glyphicon-list"></span>
                 <span class="hidden-xs"> Übersicht</span>
             </a>

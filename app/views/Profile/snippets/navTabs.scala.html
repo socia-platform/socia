@@ -20,7 +20,7 @@
             </li>
 		}
 	}
-    @defining(if(Navigation.getTitle().equals("Gruppen & Kurse")) {"active"} else {"deactive"}) { status =>
+    @defining(if(Navigation.getTitle().equals("Gruppen")) {"active"} else {"deactive"}) { status =>
         <li class="@status">
             <a href="@routes.ProfileController.groups(user.id)" role="button" class="btn btn-default active" rel="tooltip" data-original-title="Gruppen- und Kursübersicht" data-container="body">
                 <span class="glyphicon glyphicon-th-list"></span>

@@ -19,7 +19,7 @@
 
                         @if(Secured.createCourse()) {
                             @helper.inputGroupType(groupForm("type"),
-                                options = options("0"->"Öffentliche Gruppe","1"->"Private Gruppe","2"->"Kurs"),
+                                options = options("0"->"Öffentliche Gruppe","1"->"Private Gruppe"),
                                 '_label -> "Typ")
                         } else {
                             @helper.inputGroupType(groupForm("type"),

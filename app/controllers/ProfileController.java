@@ -301,12 +301,12 @@ public class ProfileController extends BaseController {
         Account account = Account.findById(id);
 
         if(Secured.isFriend(account)) {
-            Navigation.set(Level.FRIENDS, "Gruppen & Kurse", account.name, controllers.routes.ProfileController.view(account.id));
+            Navigation.set(Level.FRIENDS, "Gruppen", account.name, controllers.routes.ProfileController.view(account.id));
         } else {
             if(Secured.isMe(id)) {
-                Navigation.set(Level.PROFILE, "Gruppen & Kurse");
+                Navigation.set(Level.PROFILE, "Gruppen");
             } else {
-                Navigation.set(Level.USER, "Gruppen & Kurse", account.name, controllers.routes.ProfileController.view(account.id));
+                Navigation.set(Level.USER, "Gruppen", account.name, controllers.routes.ProfileController.view(account.id));
             }
         }
 
