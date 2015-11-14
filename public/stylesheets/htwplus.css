@@ -54,7 +54,7 @@ a > .glyphicon {
 
 button > .glyphicon:hover,
 a > .glyphicon:hover {
-	color: #76B900;
+	color: #FFA500;
 }
 
 span.errors {
@@ -107,7 +107,7 @@ h1 {
 }
 
 .hp-green {
-	/* color: #76B900; */
+	/* color: #FFA500; */
 	font-weight: bold;
 }
 
@@ -482,7 +482,7 @@ div[id*='hp-feature-text-'] table {
 }
 
 .hp-search-form button .glyphicon:hover {
-	color: #76B900 !important;
+	color: #FFA500 !important;
 }
 
 .hp-navbar li a .glyphicon {
@@ -513,7 +513,7 @@ div[id*='hp-feature-text-'] table {
 }
 
 .hp-breadcrumb .breadcrumb a:hover .glyphicon {
-    color: #76b900;
+    color: #FFA500;
 }
 
 .hp-breadcrumb .breadcrumb > li:first-child {
@@ -527,7 +527,7 @@ div[id*='hp-feature-text-'] table {
 /*============================== Notification ==============================*/
 
 .hp-dropdown-notifications li.notification-action:not(.disabled) a {
-    color: #76b900;
+    color: #FFA500;
 }
 
 .hp-dropdown-notifications li.notification-element span.glyphicon {
@@ -567,7 +567,7 @@ div.hp-mailto a span.glyphicon,
 div.notifications-mark-as-read a span.glyphicon,
 div.well.notification a span.glyphicon {
     margin-right: 7px;
-    color: #76b900;
+    color: #FFA500;
 }
 
 div.well.notification {
@@ -590,7 +590,7 @@ div.well.notification div.notification-read {
 }
 
 div.well.notification div.notification-read.read {
-    color: #76b900;
+    color: #FFA500;
 }
 
 div.well.notification div.notification-read.unread {
@@ -642,7 +642,7 @@ input.hp-notification-hour {
 
 .hp-nav-tabs > li > a:hover,
 .hp-nav-tabs > li > a:focus {
-	background-color: #76b900;
+	background-color: #FFA500;
 }
 
 .hp-nav-tabs > li > a > .glyphicon:hover,
@@ -816,7 +816,7 @@ div.hp-pagination {
 }
 
 .hp-pagination a.active {
-	background: #76b900;
+	background: #FFA500;
 	color: white;	
 }
 
@@ -909,7 +909,7 @@ div.hp-pagination {
     margin: 20px 0px;
 }
 .well.broadcast {
-    border: 1px solid #76b900;
+    border: 1px solid #FFA500;
 }
 
 .media small {
@@ -1105,16 +1105,16 @@ div.hp-avatar-default-9 {
 }
 
 .cropper-line {
-    background-color: #76b900 !important;
+    background-color: #FFA500 !important;
 }
 
 .cropper-view-box {
-    outline: 1px solid #76b900 !important;
-    outline-color: #76b900 !important;
+    outline: 1px solid #FFA500 !important;
+    outline-color: #FFA500 !important;
 }
 
 .cropper-point {
-    background-color: #76b900 !important;
+    background-color: #FFA500 !important;
 }
 
 
@@ -1210,7 +1210,7 @@ div.hp-avatar-default-9 {
 .hp-optionsMenu .dropdown-menu a:hover,
 .hp-optionsMenu .dropdown-menu a:focus {
     background-color: inherit;
-    color: #76B900;
+    color: #FFA500;
 }
 
 .hp-optionsMenu .dropdown-toggle {
@@ -1224,11 +1224,11 @@ div.hp-avatar-default-9 {
 }
 
 .hp-optionsMenu .dropdown-toggle > .glyphicon-chevron-up {
-    color: #76B900;
+    color: #FFA500;
 }
 
 .hp-optionsTable > tr:hover .dropdown-toggle > .glyphicon {
-    color: #76B900
+    color: #FFA500
 }
 
 
@@ -1338,7 +1338,7 @@ div.hp-avatar-default-9 {
 .hp-searchfacet-remove {
     margin-top: 5px;
     padding: 5px;
-    border: 1px solid #76B900;
+    border: 1px solid #FFA500;
 }
 .hp-searchfacet-remove a {
     float: right;
