@@ -544,7 +544,7 @@ div[id*='hp-feature-text-'] table {
 }
 
 .hp-dropdown-notifications li.notification-element.unread a {
-    color: black;
+    color: white;
 }
 
 .hp-dropdown-notifications li#hp-notification-show-history {
