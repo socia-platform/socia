@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/socia-platform/htwplus"
+    "url": "https://github.com/socia-platform/socia"
   },
   "author": "Socia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/socia-platform/htwplus/issues"
+    "url": "https://github.com/socia-platform/socia/issues"
   },
-  "homepage": "https://github.com/socia-platform/htwplus",
+  "homepage": "https://github.com/socia-platform/socia",
   "devDependencies": {
     "bower": ""
   }
