@@ -181,7 +181,7 @@ public class Global extends GlobalSettings {
                         admin.firstname = "Admin";
                         admin.lastname = "@Socia";
                         admin.role = AccountRole.ADMIN;
-                        admin.avatar = "a1";
+                        admin.avatar = "1";
                         admin.password = Component.md5(adminPassword);
                         admin.create();
                     }
@@ -194,7 +194,7 @@ public class Global extends GlobalSettings {
                         dummy.firstname = "Gelöschter";
                         dummy.lastname = "Account";
                         dummy.role = AccountRole.DUMMY;
-                        dummy.avatar = "aDefault";
+                        dummy.avatar = "2";
                         dummy.password = Component.md5(dummyPassword);
                         dummy.create();
                     } else if(dummy.firstname.equals("Anonym")) {

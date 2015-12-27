@@ -2,6 +2,7 @@ package models;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -135,8 +136,8 @@ public class Media extends BaseNotifiable implements INotifiable {
 	    	throw new Exception("File exists already");
 	    }
 	    newFile.getParentFile().mkdirs();
-	    this.file.renameTo(newFile);
-	    if(!newFile.exists()) {
+		Files.move(this.file.toPath(), newFile.toPath());
+		if(!newFile.exists()) {
 	    	throw new Exception("Could not upload file");
 	    }
 	}

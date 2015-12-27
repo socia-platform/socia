@@ -525,6 +525,10 @@ div[id*='hp-feature-text-'] table {
     padding-right: 10px;
 }
 
+.breadcrumb {
+    border: 0px;
+}
+
 /*============================== Notification ==============================*/
 
 .hp-dropdown-notifications li.notification-action:not(.disabled) a {
@@ -562,6 +566,7 @@ div[id*='hp-feature-text-'] table {
 .hp-dropdown-notifications li#hp-notification-nothing-new {
     text-align: center;
     padding: 7px;
+    color: white;
 }
 
 div.hp-mailto a span.glyphicon,
