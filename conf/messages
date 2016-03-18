@@ -60,7 +60,7 @@ landingpage.features.filemgmt.description=Nutze das Medienmanagement in Gruppen,
 landingpage.features.newsstream.title=Immer auf dem neusten Stand
 landingpage.features.newsstream.description=Dein persönlicher Newsstream hält dich immer auf dem Laufenden. Alle Posts und Kommentare deiner Gruppen und Freunden werden hier zusammengefasst.
 landingpage.features.notifications.title=Keine Neuigkeiten verpassen
-landingpage.features.notifications.description=Ob neue Posts, Kommentare, Freundschaftsanfragen oder Gruppeneinladungen - du wirst über alles informiert. Auf Wunsch auch per Email.
+landingpage.features.notifications.description=Ob neue Posts, Kommentare, Kontaktanfragen oder Gruppeneinladungen - du wirst über alles informiert. Auf Wunsch auch per Email.
 
 # --- Main page
 mainpage.backtotop=Nach oben
@@ -122,6 +122,12 @@ group.invite_no_invite=Bitte mindestens eine Person einladen
 group.invite_invited=Einladungen verschickt!
 group.group_request_sent=Deine Anfrage wurde erfolgreich übermittelt!
 group.group_not_found=Gruppe wurde nicht gefunden!
+group.view.type.open=dieser Gruppe
+group.view.type.close=dieser Gruppe
+group.view.type.course=diesem Kurs
+group.avatar.type.open=glyphicon-globe
+group.avatar.type.close=glyphicon-lock
+group.avatar.type.course=glyphicon-briefcase
 media.group_new_media=Neues Medium <span class="hp-green">{0}</span> in der Gruppe <span class="hp-green">{1}</span>
 
 # --- admin control center
@@ -141,6 +147,9 @@ admin.delete_account.wrongconfirm=Wenn du den Account löschen willst, gib zur B
 
 # --- search
 search.headline=Suchergebnisse für <b>{0}</b>
+search.group=Gruppen und Kurse
+search.user=Personen
+search.post=Posts und Kommentare
 search.group.grouptype.open=Offen
 search.group.grouptype.close=Geschlossen
 search.group.grouptype.course=Kurs

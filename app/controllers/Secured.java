@@ -1,23 +1,30 @@
 package controllers;
 
 
-import java.util.Date;
-
+import com.ning.http.client.Request;
 import com.typesafe.config.ConfigFactory;
+import managers.AccountManager;
+import managers.FriendshipManager;
+import managers.GroupManager;
+import managers.PostBookmarkManager;
 import models.*;
 import models.enums.AccountRole;
-import play.Logger;
 import play.Play;
 import play.i18n.Messages;
+import play.mvc.Http;
 import play.mvc.Http.Context;
 import play.mvc.Result;
 import play.mvc.Security;
 import views.html.landingpage;
 
+import javax.inject.Inject;
+import java.util.Date;
+
 /**
  * This class provides several authorization methods for security reasons.
  */
 public class Secured extends Security.Authenticator {
+
 	/**
 	 * Returns the ID of the currently logged in user.
 	 *
@@ -64,6 +71,20 @@ public class Secured extends Security.Authenticator {
     }
 
 	/**
+	 * Redirect a call to his origin url or main page if he used a new tab.
+	 * This can be used if objects cant be found (accounts, posts, groups, notification ...)
+	 * @param request a user request
+	 * @Result Result instance
+     */
+	public static Result nullRedirect(Http.Request request) {
+		if (request.getHeader("referer") != null) {
+			return redirect(request.getHeader("referer"));
+		} else {
+			return redirect(routes.Application.index());
+		}
+	}
+
+	/**
 	 * Returns true, if the currently logged in user is admin.
 	 *
 	 * @return True, if admin
@@ -78,9 +99,9 @@ public class Secured extends Security.Authenticator {
      *
      * @return True, if currentUser.id is @param id
      */
-    public static boolean isMe(Long id) {
+    public static boolean isMe(Account account) {
         Account current = Component.currentAccount();
-        return current.equals(Account.findById(id));
+        return current.equals(account);
     }
 
 	/**
@@ -91,7 +112,7 @@ public class Secured extends Security.Authenticator {
 	 * @return True, if account is member
 	 */
 	public static boolean isMemberOfGroup(Group group, Account account){
-		return Group.isMember(group, account);
+		return GroupManager.isMember(group, account);
 	}
 
 	/**
@@ -322,7 +343,7 @@ public class Secured extends Security.Authenticator {
         if (post == null) {
             return false;
         }
-        return PostBookmark.isPostBookmarkedByAccount(account, post);
+        return PostBookmarkManager.isPostBookmarkedByAccount(account, post);
     }
 
     /**
@@ -467,7 +488,7 @@ public class Secured extends Security.Authenticator {
 	 * @return True, if logged in user is owner of account
 	 */
 	public static boolean isOwnerOfAccount(final Long accountId) {
-		return Account.isOwner(accountId, Component.currentAccount());
+		return AccountManager.isOwner(accountId, Component.currentAccount());
 	}
 
 	/**
@@ -477,7 +498,7 @@ public class Secured extends Security.Authenticator {
 	 * @return True, if logged in account has friendship to account
 	 */
 	public static boolean isFriend(Account account) {
-		return Friendship.alreadyFriendly(Component.currentAccount(), account);
+		return FriendshipManager.alreadyFriendly(Component.currentAccount(), account);
 	}
 
 	/**
@@ -528,7 +549,6 @@ public class Secured extends Security.Authenticator {
 				if (Secured.isMemberOfGroup(group, current)) {
 					return true;
 				}
-
 			case close:
 				if (Secured.isMemberOfGroup(group, current)) {
 					return true;
@@ -549,7 +569,7 @@ public class Secured extends Security.Authenticator {
 	 * @return True, if logged in account is allowed to view media
 	 */
 	public static boolean viewMedia(Media media) {
-        return media != null && Secured.viewGroup(media.group);
+        return media != null && Secured.viewGroup(media.findGroup());
 	}
 
 	/**
@@ -560,10 +580,22 @@ public class Secured extends Security.Authenticator {
 	 */
 	public static boolean deleteMedia(Media media) {
 		Account current = Component.currentAccount();
-		Group group = media.group;
+		Group group = media.findGroup();
         
         return Secured.isAdmin() || Secured.isOwnerOfGroup(group, current) || media.owner.equals(current);
     }
+
+	/**
+	 * Returns true, if the currently logged in account is allowed to delete a folder from its associated group.
+	 *
+	 * @param folder Folder to be deleted
+	 * @return True, if logged in account is allowed to delete media
+	 */
+	public static boolean deleteFolder(Folder folder) {
+		Account current = Component.currentAccount();
+
+		return Secured.isAdmin() || folder.owner.equals(current);
+	}
 
     /**
      * Returns true, if the current user has access to a notification.
@@ -579,4 +611,18 @@ public class Secured extends Security.Authenticator {
         return object != null;
     }
 
+	public static boolean viewFolder(Folder folder) {
+		if (folder == null) {
+			return false;
+		}
+		if (isAdmin()) {
+			return true;
+		}
+		if (viewGroup(folder.group)) {
+			return true;
+		}
+		if (isMe(Component.currentAccount())) return true;
+
+		return false;
+	}
 }

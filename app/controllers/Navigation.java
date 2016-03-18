@@ -31,8 +31,8 @@ public class Navigation {
 	{
 		titleMapping.put(Level.PROFILE, "Profil");
 		titleMapping.put(Level.STREAM, "Newsstream");
-		titleMapping.put(Level.FRIENDS, "Freunde");
-		titleMapping.put(Level.GROUPS, "Gruppen");
+		titleMapping.put(Level.FRIENDS, "Kontakte");
+		titleMapping.put(Level.GROUPS, "Gruppen & Kurse");
 		titleMapping.put(Level.HELP, "Hilfe");
 		titleMapping.put(Level.USER, "Person");
 		titleMapping.put(Level.ADMIN, "Control Center");
