@@ -8,8 +8,8 @@ html {
 }
 
 body {
-	margin-top: 91px;
-	overflow-x: hidden;
+    margin-top: 91px;
+    overflow-x: hidden;
     background: url('../images/crossword.png');
     background-repeat:repeat;
 }
@@ -20,7 +20,7 @@ div.alert {
 
 a {
     display: inline-block;
-	outline: none!important;
+    outline: none!important;
 }
 
 a.disabled,
@@ -31,87 +31,87 @@ a.disabled > .glyphicon {
 }
 
 hr {
-	border-bottom: 1px solid #ffffff;
-	margin-top: 10px;
+    border-bottom: 1px solid #ffffff;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 table {
-	table-layout: fixed;
-	margin-bottom: 0;
+    table-layout: fixed;
+    margin-bottom: 0;
 }
 
 td {
-	overflow: hidden;
-	text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 textarea {
-  	resize: none;
+    resize: none;
 }
 
 button > .glyphicon,
 a > .glyphicon {
-	color: rgb(90,88,88);
+    color: rgb(90,88,88);
 }
 
 button > .glyphicon:hover,
 a > .glyphicon:hover {
-	color: #FFA500;
+    color: #76B900;
 }
 
 span.errors {
     text-shadow: 1px 1px 1px rgba(185, 74, 72, 0.5);
-	color: #b94a48;
+    color: #b94a48;
 }
 
 .hp-truncate {
-	overflow: hidden;
-	text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hp-white-space {
-	white-space: pre-line;
+    white-space: pre-line;
 }
 
 h1 {
-	text-align: center;
+    text-align: center;
 }
 
 #hp-feedback {
-	width: 50px;
-	height: 172px;
-	padding: 5px;
-	position: fixed;
-	left: -5px;
-	top: 50%;
-	margin-top: -105px;
-	z-index: 1500;
+    width: 50px;
+    height: 172px;
+    padding: 5px;
+    position: fixed;
+    left: -5px;
+    top: 50%;
+    margin-top: -105px;
+    z-index: 1500;
 }
 
 #hp-feedback-icon {
-	color: white !important;
-	margin: 10px;
-	font-size: 14pt;
+    color: white !important;
+    margin: 10px;
+    font-size: 14pt;
 }
 
 .hp-easy-feedback {
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	
-	transform: rotate(90deg);
-	font-size: 24px;
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+
+    transform: rotate(90deg);
+    font-size: 24px;
 }
 
 #hp-feedback-content {
-	height: 100px;
+    height: 100px;
 }
 
 .hp-green {
-	/* color: #FFA500; */
-	font-weight: bold;
+    /* color: #76B900; */
+    font-weight: bold;
 }
 
 .hp-bold {
@@ -119,7 +119,7 @@ h1 {
 }
 
 .no-drop {
-	cursor: no-drop;
+    cursor: no-drop;
 }
 
 a.hp-nohref {
@@ -133,21 +133,21 @@ a.hp-nohref {
 
 /*============================== Landingpage ==============================*/
 body#hp-landingpage {
-	margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 #hp-landingpage div.alert {
-	position: absolute;
-	margin: 0;
-	margin-top: 15px !important;
-	left: 10px;
-	right: 10px;
-	text-shadow: none;
+    position: absolute;
+    margin: 0;
+    margin-top: 15px !important;
+    left: 10px;
+    right: 10px;
+    text-shadow: none;
 }
 
 @media (min-width: 992px) {
     #hp-landingpage div.alert {
-    	margin-top: 25px !important;
+        margin-top: 25px !important;
     }
 }
 
@@ -156,20 +156,19 @@ body#hp-landingpage {
     padding-top: 30px;
     font-family: 'Swanky and Moo Moo', cursive;
     font-size: 20pt;
-	-moz-transform: rotate(350deg);
-	-ms-transform: rotate(350deg);
-	-o-transform: rotate(350deg);
+    -moz-transform: rotate(350deg);
+    -ms-transform: rotate(350deg);
+    -o-transform: rotate(350deg);
     -webkit-transform: rotate(350deg);
     transform: rotate(350deg);
 }
 
 #hp-landingpage div#hp-login {
-    margin-top: 100px;
-	padding: 70px 0;
+    padding: 70px 0;
     background-size: 100% auto;
     background: url('../images/LandingpageBackground/default_small.jpg') no-repeat center center;
     color: white !important;
-	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 992px) {
@@ -185,13 +184,13 @@ body#hp-landingpage {
 }
 
 #hp-landingpage div#hp-login .hp-landing-logo img {
-	width: 100%;
+    width: 100%;
     max-height: 300px;
 }
 
 @media (min-width: 992px) {
     #hp-landingpage div#hp-login {
-       	padding: 150px 0;
+        padding: 150px 0;
     }
 }
 
@@ -200,7 +199,7 @@ body#hp-landingpage {
 }
 
 #hp-landingpage div#hp-login > div {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -224,10 +223,10 @@ body#hp-landingpage {
 
 #hp-landingpage div#hp-navbar.hp-animate {
     transition: 0.3s ease 0s;
-	-webkit-transition: 0.3s ease 0s;
-	-moz-transition: 0.3s ease 0s;
-	-ms-transition: 0.3s ease 0s;
-	-o-transition: 0.3s ease 0s;
+    -webkit-transition: 0.3s ease 0s;
+    -moz-transition: 0.3s ease 0s;
+    -ms-transition: 0.3s ease 0s;
+    -o-transition: 0.3s ease 0s;
 }
 
 #hp-landingpage div#hp-navbar.affix-top {
@@ -241,10 +240,10 @@ body#hp-landingpage {
 }
 
 #hp-landingpage div#hp-navbar.affix {
-	top: 0;
-	left: 0;
-	right: 0;
-	min-height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 50px;
     margin-bottom: -51px;
 }
 
@@ -254,10 +253,10 @@ body#hp-landingpage {
 }
 
 #hp-landingpage div#hp-navbar ul.hp-nav {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-	display: table;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 
 @media (min-width: 768px) {
@@ -267,9 +266,9 @@ body#hp-landingpage {
 }
 
 #hp-landingpage div#hp-about {
-	margin-top: 51px;
-	margin-bottom: 20px;
-	padding-top: 15px;
+    margin-top: 51px;
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
 
 #hp-landingpage div#hp-about > div {
@@ -300,7 +299,7 @@ body#hp-landingpage {
 }
 
 #hp-landingpage div#hp-about .hp-circle > img {
-     border-radius: 50%;
+    border-radius: 50%;
 }
 
 #hp-landingpage div#hp-about > div:after {
@@ -343,15 +342,15 @@ div[id*='hp-feature-text-'] table {
         height: 50%;
     }
 
-	#hp-landingpage div#hp-feature-demo .hp-notepad-right {
-	    margin-top: 30px;
-	}
+    #hp-landingpage div#hp-feature-demo .hp-notepad-right {
+        margin-top: 30px;
+    }
 
-	#hp-landingpage div#hp-feature-demo .hp-notepad-content {
-		position: relative;
-	    min-height: inherit;
+    #hp-landingpage div#hp-feature-demo .hp-notepad-content {
+        position: relative;
+        min-height: inherit;
         margin-top: 40px;
-	}
+    }
 
     #hp-landingpage div#hp-features div[id*='hp-feature-demo-'] {
         display: none;
@@ -381,14 +380,14 @@ div[id*='hp-feature-text-'] table {
 }
 
 #hp-landingpage div#hp-features .hp-feature-title {
-	font-family: 'Swanky and Moo Moo', cursive;
-	margin-top: 0;
-	line-height: 1.1;
+    font-family: 'Swanky and Moo Moo', cursive;
+    margin-top: 0;
+    line-height: 1.1;
 }
 
 #hp-landingpage div#hp-features .hp-feature-description {
-	margin-top: 30px;
-	margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 
 #hp-landingpage div.hp-feature-icon {
@@ -407,22 +406,22 @@ div[id*='hp-feature-text-'] table {
 
 #hp-landingpage div[id*='hp-feature-text-']:nth-child(2n) div.hp-feature-icon {
     left: 0;
-	-moz-transform: rotate(15deg);
-	-ms-transform: rotate(15deg);
-	-o-transform: rotate(15deg);
-	-webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
 }
 
 #hp-landingpage div[id*='hp-feature-text-']:nth-child(2n+1) div.hp-feature-icon {
     right: 0;
-	-moz-transform: rotate(345deg);
-	-ms-transform: rotate(345deg);
-	-o-transform: rotate(345deg);
-	-webkit-transform: rotate(345deg);
+    -moz-transform: rotate(345deg);
+    -ms-transform: rotate(345deg);
+    -o-transform: rotate(345deg);
+    -webkit-transform: rotate(345deg);
 }
 
 #hp-navbar li a .glyphicon {
-   color: inherit !important
+    color: inherit !important
 }
 
 /*============================== Navigation ==============================*/
@@ -433,20 +432,20 @@ div[id*='hp-feature-text-'] table {
 
 .hp-dropdown-notifications,
 .hp-dropdown-search {
-	width: 600px;
-	max-height: 470px;
-	left: -150px;
+    width: 600px;
+    max-height: 470px;
+    left: -150px;
 }
 
 @media (max-width: 767px) {
-	.hp-dropdown-notifications,
-	.hp-dropdown-search {
-		position: fixed;
-		width: auto;
-		top: 50px;
-		right: 1px;
-		left: 1px;
-	}
+    .hp-dropdown-notifications,
+    .hp-dropdown-search {
+        position: fixed;
+        width: auto;
+        top: 50px;
+        right: 1px;
+        left: 1px;
+    }
 }
 
 .hp-dropdown-search .hp-search-form button {
@@ -464,8 +463,8 @@ div[id*='hp-feature-text-'] table {
 }
 
 #hp-search-home {
-  margin: auto;
-  width: 300px;
+    margin: auto;
+    width: 300px;
 }
 
 .hp-search-form {
@@ -473,20 +472,20 @@ div[id*='hp-feature-text-'] table {
 }
 
 .hp-search-form button {
-	background: transparent;
-	border: 0;
-	margin-left: -28px;
-	outline: none;
+    background: transparent;
+    border: 0;
+    margin-left: -28px;
+    outline: none;
     position: relative;
     top: 7px;
 }
 
 .hp-search-form button .glyphicon:hover {
-	color: #FFA500 !important;
+    color: #76B900 !important;
 }
 
 .hp-navbar li a .glyphicon {
-	color: inherit
+    color: inherit
 }
 
 .hp-breadcrumb {
@@ -513,7 +512,7 @@ div[id*='hp-feature-text-'] table {
 }
 
 .hp-breadcrumb .breadcrumb a:hover .glyphicon {
-    color: #FFA500;
+    color: #76b900;
 }
 
 .hp-breadcrumb .breadcrumb > li:first-child {
@@ -524,14 +523,10 @@ div[id*='hp-feature-text-'] table {
     padding-right: 10px;
 }
 
-.breadcrumb {
-    border: 0px;
-}
-
 /*============================== Notification ==============================*/
 
 .hp-dropdown-notifications li.notification-action:not(.disabled) a {
-    color: #FFA500;
+    color: #76b900;
 }
 
 .hp-dropdown-notifications li.notification-element span.glyphicon {
@@ -547,7 +542,7 @@ div[id*='hp-feature-text-'] table {
 }
 
 .hp-dropdown-notifications li.notification-element.unread a {
-    color: white;
+    color: black;
 }
 
 .hp-dropdown-notifications li#hp-notification-show-history {
@@ -565,14 +560,13 @@ div[id*='hp-feature-text-'] table {
 .hp-dropdown-notifications li#hp-notification-nothing-new {
     text-align: center;
     padding: 7px;
-    color: white;
 }
 
 div.hp-mailto a span.glyphicon,
 div.notifications-mark-as-read a span.glyphicon,
 div.well.notification a span.glyphicon {
     margin-right: 7px;
-    color: #FFA500;
+    color: #76b900;
 }
 
 div.well.notification {
@@ -595,7 +589,7 @@ div.well.notification div.notification-read {
 }
 
 div.well.notification div.notification-read.read {
-    color: #FFA500;
+    color: #76b900;
 }
 
 div.well.notification div.notification-read.unread {
@@ -603,8 +597,8 @@ div.well.notification div.notification-read.unread {
 }
 
 input.hp-notification-hour {
-	display: inline;
-	width: 60px;
+    display: inline;
+    width: 60px;
 }
 
 .notifications-mark-as-read {
@@ -627,11 +621,11 @@ input.hp-notification-hour {
 /*============================== Nav-Tabs ==============================*/
 
 .hp-nav-tabs {
-	margin-top: -28px;
+    margin-top: -28px;
 }
 
 .hp-nav-tabs > li {
-	width: 100px;
+    width: 100px;
 }
 
 @media (max-width: 767px) {
@@ -647,7 +641,7 @@ input.hp-notification-hour {
 
 .hp-nav-tabs > li > a:hover,
 .hp-nav-tabs > li > a:focus {
-	background-color: #FFA500;
+    background-color: #76b900;
 }
 
 .hp-nav-tabs > li > a > .glyphicon:hover,
@@ -685,39 +679,39 @@ input.hp-notification-hour {
 }
 
 #hp-plusi {
-	width: 170px;
+    width: 170px;
 }
 
 #hp-login #hp-plusi {
-	position: absolute;
-	right: 5px;
-	bottom: 135px;
+    position: absolute;
+    right: 5px;
+    bottom: 135px;
 }
 
 .hp-circle #hp-plusi {
-	width: 100px;
-	margin-left: -2px;
+    width: 100px;
+    margin-left: -2px;
 }
 
 @media all and (max-width: 480px) {
     #hp-plusi {
-		width: 130px;
+        width: 130px;
     }
 
-	#hp-login #hp-plusi {
-		bottom: 140px;
-	}
+    #hp-login #hp-plusi {
+        bottom: 140px;
+    }
 }
 
 /*============================== Notepad ==============================*/
 
 div.hp-notepad-content {
-	padding: 5px 30px 15px;
+    padding: 5px 30px 15px;
     margin-bottom: 15px;
-	box-sizing: content-box;
+    box-sizing: content-box;
     background-color: white;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     -moz-box-shadow: 0 0 1px #888;
     -webkit-box-shadow: 0 0 1px #888;
     box-shadow: 0 0 1px #888;
@@ -763,11 +757,11 @@ div.hp-feed-filter ul.dropdown-menu{
 }
 
 div#hp-footer {
-	margin: 5px 44px 0 69px;
+    margin: 5px 44px 0 69px;
 }
 
 div#hp-footer-links {
-	float: left;
+    float: left;
 }
 
 div#hp-footer-logo {
@@ -781,30 +775,30 @@ div#hp-footer-logo {
 /*============================== dl-Form ==============================*/
 
 form dl dt {
-	text-align: left !important;
+    text-align: left !important;
 }
 
 form dl dd > .checkbox,
 form dl dd > .radio {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 form dl dd > .checkbox:last-child,
 form dl dd > .radio:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 form dl dd > .radio input {
-	margin-top: 2px;
+    margin-top: 2px;
 }
 
 form dd.error {
-	text-shadow: 1px 1px 1px rgba(185, 74, 72, 0.5);
-	color: #b94a48;
+    text-shadow: 1px 1px 1px rgba(185, 74, 72, 0.5);
+    color: #b94a48;
 }
 
 form dd.info {
-	display: none;
+    display: none;
 }
 
 #email-notifications {
@@ -815,16 +809,16 @@ form dd.info {
 /*============================== Pagination ==============================*/
 
 div.hp-pagination {
-	text-align: center;
+    text-align: center;
 }
 
 .hp-pagination > ul {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .hp-pagination a.active {
-	background: #FFA500;
-	color: white;	
+    background: #76b900;
+    color: white;
 }
 
 .nextPage {
@@ -852,28 +846,28 @@ div.hp-pagination {
 /*============================== Post & Comment View ==============================*/
 
 .hp-horizontal-form {
-	padding: 0;
-	float: none !important;
+    padding: 0;
+    float: none !important;
 }
 
 .hp-horizontal-form .input-group-btn {
-	padding-left: 10px;
-	vertical-align: top;
+    padding-left: 10px;
+    vertical-align: top;
 }
 
 .hp-horizontal-form textarea,
 .hp-horizontal-form button {
-	border-radius: 4px!important;
+    border-radius: 4px!important;
 }
 
 #hp-new-comment-content,
 #hp-new-post-content {
-	height: 60px;
+    height: 60px;
     transition: height 0.5s ease 0.2s;
-	-webkit-transition: height 0.5s ease 0.2s;
-	-moz-transition: height 0.5s ease 0.2s;
-	-ms-transition: height 0.5s ease 0.2s;
-	-o-transition: height 0.5s ease 0.2s;
+    -webkit-transition: height 0.5s ease 0.2s;
+    -moz-transition: height 0.5s ease 0.2s;
+    -ms-transition: height 0.5s ease 0.2s;
+    -o-transition: height 0.5s ease 0.2s;
 }
 #hp-new-comment-content {
     height: 32px;
@@ -881,11 +875,11 @@ div.hp-pagination {
 
 #hp-new-comment-content:focus,
 #hp-new-post-content:focus {
-	height: 104px;
+    height: 104px;
 }
 
 .hp-comments {
-	margin-left: 50px;
+    margin-left: 50px;
 }
 
 @media (max-width: 767px) {
@@ -895,35 +889,35 @@ div.hp-pagination {
 }
 
 .hp-comment-form {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .hp-post-form label,
 .hp-comment-form label {
-	display: none;
+    display: none;
 }
 
 .hp-post-form dl, dd,
 .hp-comment-form dl, dd {
-	margin: 0;
+    margin: 0;
 }
 
 .media-heading .popover  {
-	font-size: 11px;
+    font-size: 11px;
     font-weight: normal;
     line-height: 16px;
 }
 
 .well {
-	padding: 15px;
+    padding: 15px;
     margin: 20px 0px;
 }
 .well.broadcast {
-    border: 1px solid #FFA500;
+    border: 1px solid #76b900;
 }
 
 .media small {
-	color: #999999;
+    color: #999999;
 }
 
 .media-heading .glyphicon {
@@ -944,7 +938,7 @@ div.hp-pagination {
 }
 
 .hp-postLink {
-	color: #0082D1;
+    color: #0082D1;
 }
 
 .hp-postLink .glyphicon,
@@ -957,20 +951,20 @@ div.hp-pagination {
 /*============================== Avatare ==============================*/
 
 #hp-avatars img {
-	margin-bottom: 8px;
-	margin-right: 8px;
-	width: 64px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 64px;
 }
 
 #hp-avatars img:hover {
-	border-color: #5a5858;
+    border-color: #5a5858;
 }
 
 #hp-avatars img.active {
-  border-color: rgba(255, 95, 0, 0.8);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 95, 0, .6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 95, 0, .6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 95, 0, .6);
+    border-color: rgba(255, 95, 0, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 95, 0, .6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 95, 0, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 95, 0, .6);
 }
 
 @media (max-width: 350px) {
@@ -981,21 +975,21 @@ div.hp-pagination {
 }
 
 table td .hp-avatar-small {
-	margin: -4px;
+    margin: -4px;
 }
 
 .hp-avatar-small {
     width: 30px;
     height:  30px;
     border-radius: 4px;
-	line-height: 30px;
+    line-height: 30px;
 }
 
 .hp-avatar-large {
     width: 250px;
     height: 250px;
     border-radius: 6px;
-	line-height: 250px;
+    line-height: 250px;
 }
 
 .hp-avatar-navi {
@@ -1003,7 +997,7 @@ table td .hp-avatar-small {
     height: 32px;
     display: inline-block;
     border-radius: 4px;
-	line-height: 32px;
+    line-height: 32px;
 }
 
 .hp-avatar-medium {
@@ -1011,20 +1005,20 @@ table td .hp-avatar-small {
     height: 72px;
     border-radius: 5px;
     display: inline-block;
-	line-height: 72px;
-	font-size: 36px;
+    line-height: 72px;
+    font-size: 36px;
 }
 
 /* created for post avatar. */
 @media (max-width: 1200px) {
- .hp-avatar-medium {
-     width: 60px;
-     height: 60px;
-     border-radius: 5px;
-     display: inline-block;
- 	line-height: 60px;
- 	font-size: 28px;
- }
+    .hp-avatar-medium {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        display: inline-block;
+        line-height: 60px;
+        font-size: 28px;
+    }
 }
 
 .hp-avatar-list {
@@ -1033,48 +1027,48 @@ table td .hp-avatar-small {
 }
 
 div[class*="hp-avatar-default-"] {
-	color: white;
-	text-align: center;
+    color: white;
+    text-align: center;
 }
 
 div.hp-avatar-default-0 {
-	background-color: rgb(153, 205, 100);
+    background-color: rgb(153, 205, 100);
 }
 
 div.hp-avatar-default-1 {
-	background-color: rgb(255, 193, 40);
+    background-color: rgb(255, 193, 40);
 }
 
 div.hp-avatar-default-2 {
-	background-color: rgb(98, 159, 161);
+    background-color: rgb(98, 159, 161);
 }
 
 div.hp-avatar-default-3 {
-	background-color: rgb(90, 88, 88);
+    background-color: rgb(90, 88, 88);
 }
 
 div.hp-avatar-default-4 {
-	background-color: rgb(230, 178, 130);
+    background-color: rgb(230, 178, 130);
 }
 
 div.hp-avatar-default-5 {
-	background-color: rgb(43, 192, 175);
+    background-color: rgb(43, 192, 175);
 }
 
 div.hp-avatar-default-6 {
-	background-color: rgb(152, 84, 192);
+    background-color: rgb(152, 84, 192);
 }
 
 div.hp-avatar-default-7 {
-	background-color: rgb(192, 84, 162);
+    background-color: rgb(192, 84, 162);
 }
 
 div.hp-avatar-default-8 {
-	background-color: rgb(219, 93, 93);
+    background-color: rgb(219, 93, 93);
 }
 
 div.hp-avatar-default-9 {
-	background-color: rgb(95, 121, 63);
+    background-color: rgb(95, 121, 63);
 }
 
 .hp-avatar-input-wrapper {
@@ -1126,50 +1120,50 @@ div.hp-avatar-default-9 {
 }
 
 .cropper-line {
-    background-color: #FFA500 !important;
+    background-color: #76b900 !important;
 }
 
 .cropper-view-box {
-    outline: 1px solid #FFA500 !important;
-    outline-color: #FFA500 !important;
+    outline: 1px solid #76b900 !important;
+    outline-color: #76b900 !important;
 }
 
 .cropper-point {
-    background-color: #FFA500 !important;
+    background-color: #76b900 !important;
 }
 
 
 /*============================== Token ==============================*/
 
 #token-input {
-	display:none;
+    display:none;
 }
 
 /*============================== Ajax ==============================*/
 
 .loading {
-	background-image: url(../images/loading.gif);
-	width: 16px;
-	height: 16px;
-	vertical-align: middle;
-	margin-right: 8px;
-	background-size: 100%;
-	display: none;
+    background-image: url(../images/loading.gif);
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-size: 100%;
+    display: none;
 }
 
 .loading#loadingMedia{
-	vertical-align: top;
+    vertical-align: top;
 }
 
 #loading-active {
-	background-image: url(../images/loading.gif);
-	width: 16px;
-	height: 16px;
-	background-size: 100%;
+    background-image: url(../images/loading.gif);
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
 }
 
 #fileupload-status {
-	display: none;
+    display: none;
 }
 
 /*============================== Options Menu ==============================*/
@@ -1231,7 +1225,7 @@ div.hp-avatar-default-9 {
 .hp-optionsMenu .dropdown-menu a:hover,
 .hp-optionsMenu .dropdown-menu a:focus {
     background-color: inherit;
-    color: #FFA500;
+    color: #76B900;
 }
 
 .hp-optionsMenu .dropdown-toggle {
@@ -1245,20 +1239,20 @@ div.hp-avatar-default-9 {
 }
 
 .hp-optionsMenu .dropdown-toggle > .glyphicon-chevron-up {
-    color: #FFA500;
+    color: #76B900;
 }
 
 .hp-optionsTable > tr:hover .dropdown-toggle > .glyphicon {
-    color: #FFA500
+    color: #76B900
 }
 
 
 /*========= AutoSuggestion ==========*/
 
 .autosuggest-avatar {
-      float: left;
-      line-height: 30px;
-  }
+    float: left;
+    line-height: 30px;
+}
 .autosuggest-custom-avatar {
     margin-right: 5px;
 }
@@ -1359,7 +1353,7 @@ div.hp-avatar-default-9 {
 .hp-searchfacet-remove {
     margin-top: 5px;
     padding: 5px;
-    border: 1px solid #FFA500;
+    border: 1px solid #76B900;
 }
 .hp-searchfacet-remove a {
     float: right;
@@ -1439,11 +1433,11 @@ div.hp-avatar-default-9 {
     color: #999;
     text-decoration: none;
     line-height: 35px;
- }
+}
 
 .hp-newsfeed-sitenav a.active, .hp-newsfeed-sitenav a:hover {
-     background-color: #76b900;
-     color: white;
+    background-color: #76b900;
+    color: white;
 }
 
 
@@ -1469,8 +1463,8 @@ div.hp-avatar-default-9 {
 }
 
 .hp-profile-sitenav a.active, .hp-profile-sitenav a:hover {
-  background-color: #76b900;
-  color: white;
+    background-color: #76b900;
+    color: white;
 }
 
 #hp-profile-header {
@@ -1519,24 +1513,24 @@ div.hp-avatar-default-9 {
     text-align: center;
 }
 @media(max-width: 992px) {
-#hp-profile-header .avatar {
-    border: 1px solid #ddd;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: absolute;
-    top: 13px;
-    left: 10px;
-    line-height: 70px;
-    font-size: 32px;
-    text-align: center;
-}
+    #hp-profile-header .avatar {
+        border: 1px solid #ddd;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        line-height: 70px;
+        font-size: 32px;
+        text-align: center;
+    }
 }
 
 #hp-profile-header .headline {
-     border: 1px solid #ddd;
-     padding-left: 10px;
-     background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding-left: 10px;
+    background-color: #f9f9f9;
 }
 
 #hp-profile-header .headline .title {
@@ -1580,8 +1574,8 @@ div.hp-avatar-default-9 {
 
 @media(max-width: 992px) {
     #hp-profile-header .bottomline {
-         padding-left: 10px;
-         min-height: inherit;
+        padding-left: 10px;
+        min-height: inherit;
     }
 }
 
