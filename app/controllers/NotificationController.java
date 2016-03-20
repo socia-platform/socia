@@ -23,7 +23,7 @@ public class NotificationController extends BaseController {
     @Inject
     NotificationManager notificationManager;
 
-    final int LIMIT = Integer.parseInt(Play.application().configuration().getString("htwplus.notification.limit"));
+    final int LIMIT = Integer.parseInt(Play.application().configuration().getString("socia.notification.limit"));
 
     /**
      * @deprecated Deprecated since refactor of notification system

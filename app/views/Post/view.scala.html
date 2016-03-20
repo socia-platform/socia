@@ -4,7 +4,7 @@
 @main("Post") {
     <div class="row">
         <div class="addmargin">
-                @views.html.snippets.postView(post, postForm, models.Post.PROFILE, ConfigFactory.load().getInt("htwplus.comments.singlepost"))
+                @views.html.snippets.postView(post, postForm, models.Post.PROFILE, ConfigFactory.load().getInt("socia.comments.singlepost"))
         </div>
     </div>
 }

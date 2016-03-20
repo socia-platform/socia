@@ -1,5 +1,6 @@
 package controllers;
 
+import controllers.*;
 import controllers.Navigation.Level;
 import managers.AccountManager;
 import managers.GroupManager;
@@ -112,8 +113,8 @@ public class PostController extends BaseController {
                         NotificationService.getInstance().createNotification(post, Post.PROFILE);
                     }
                 }
-
                 return redirect(controllers.routes.ProfileController.stream(anyId, PAGE, false));
+
             }
 
             flash("info", Messages.get("post.post_on_stream_only"));
@@ -236,7 +237,7 @@ public class PostController extends BaseController {
         String result = "";
 
         // subtract already displayed comments
-        int limit = PostManager.countCommentsForPost(id) - Integer.parseInt(Play.application().configuration().getString("htwplus.comments.init"));
+        int limit = PostManager.countCommentsForPost(id) - Integer.parseInt(Play.application().configuration().getString("socia.comments.init"));
 
         List<Post> comments;
         comments = PostManager.getCommentsForPost(id, limit, 0);

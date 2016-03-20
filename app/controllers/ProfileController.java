@@ -50,7 +50,7 @@ public class ProfileController extends BaseController {
     static Form<Account> accountForm = Form.form(Account.class);
     static Form<Post> postForm = Form.form(Post.class);
     static Form<Login> loginForm = Form.form(Login.class);
-	static final int LIMIT = Integer.parseInt(Play.application().configuration().getString("htwplus.post.limit"));
+	static final int LIMIT = Integer.parseInt(Play.application().configuration().getString("socia.post.limit"));
 	static final int PAGE = 1;
 
     public Result me() {

@@ -55,7 +55,7 @@
                             <span class="glyphicon glyphicon-pencil"></span>
                         </a>
                         } else {
-                        <a class="hp-post-options hp-nohref disabled" rel="tooltip" data-original-title="Posts lassen sich nur @ConfigFactory.load().getInt("htwplus.post.editTimeLimit") Minuten nach Erstellung bearbeiten." data-container="body">
+                        <a class="hp-post-options hp-nohref disabled" rel="tooltip" data-original-title="Posts lassen sich nur @ConfigFactory.load().getInt("socia.post.editTimeLimit") Minuten nach Erstellung bearbeiten." data-container="body">
                         <span class="glyphicon glyphicon-pencil"></span>
                         </a>
                         }
@@ -74,8 +74,8 @@
                     <br/>
                     <hr/>
                     <div class="hp-comments" id="comments-@post.id">
-                        @if(managers.PostManager.getCountComments(post) > ConfigFactory.load().getInt("htwplus.comments.init") &&
-                        commentLimit != ConfigFactory.load().getInt("htwplus.comments.singlepost")) {
+                        @if(managers.PostManager.getCountComments(post) > ConfigFactory.load().getInt("socia.comments.init") &&
+                        commentLimit != ConfigFactory.load().getInt("socia.comments.singlepost")) {
                         <a href="#collapse-@post.id" class="olderComments unloaded">Alle Kommentare anzeigen...</a>
 
                         <div id="collapse-@post.id" class="collapse"></div>

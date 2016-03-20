@@ -35,7 +35,7 @@ import static java.util.Arrays.asList;
 public class Application extends BaseController {
 
     static Form<Post> postForm = Form.form(Post.class);
-    static final int LIMIT = ConfigFactory.load().getInt("htwplus.post.limit");
+    static final int LIMIT = ConfigFactory.load().getInt("socia.post.limit");
     static final int PAGE = 1;
 
     @Inject
@@ -187,7 +187,7 @@ public class Application extends BaseController {
 
         // Guest case
         if (account == null) {
-            account = accountManager.findByEmail(play.Play.application().configuration().getString("htwplus.admin.mail"));
+            account = accountManager.findByEmail(play.Play.application().configuration().getString("socia.admin.mail"));
         }
 
         Form<Post> filledForm = postForm.bindFromRequest();

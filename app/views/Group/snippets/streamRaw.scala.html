@@ -4,7 +4,7 @@
 @if(posts != null) {
     @for(post <- posts) {
         @if(post.parent == null){
-            @views.html.snippets.postView(post, postForm,  models.Post.GROUP, ConfigFactory.load().getInt("htwplus.comments.init"))
+            @views.html.snippets.postView(post, postForm,  models.Post.GROUP, ConfigFactory.load().getInt("socia.comments.init"))
         }
     }
 }

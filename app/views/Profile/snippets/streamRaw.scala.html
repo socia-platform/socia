@@ -3,7 +3,7 @@
 
 @if(posts != null) {
     @for(post <- posts) {
-        @views.html.snippets.postView(post, postForm, models.Post.PROFILE, ConfigFactory.load().getInt("htwplus.comments.init"))
+        @views.html.snippets.postView(post, postForm, models.Post.PROFILE, ConfigFactory.load().getInt("socia.comments.init"))
     }
 }
 

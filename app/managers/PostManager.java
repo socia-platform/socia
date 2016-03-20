@@ -396,7 +396,7 @@ public class PostManager implements BaseManager {
      */
     @SuppressWarnings("unchecked")
     private List<Post> allWithoutExceptionPosts() {
-        Group group = groupManager.findByTitle(configuration.getString("htwplus.admin.group"));
+        Group group = groupManager.findByTitle(configuration.getString("socia.admin.group"));
         Account adminAccount = group.owner;
         return JPA.em().createQuery("FROM Post p WHERE p.owner.id != :adminId AND p.group.id != :groupId OR p.group IS NULL")
                 .setParameter("groupId", group.id)

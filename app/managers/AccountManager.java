@@ -77,10 +77,10 @@ public class AccountManager implements BaseManager {
     public void delete(Object model) {
         Account account = (Account) model;
 
-        Account dummy = findByEmail(ConfigFactory.load().getString("htwplus.dummy.mail"));
+        Account dummy = findByEmail(ConfigFactory.load().getString("socia.dummy.mail"));
 
         if (dummy == null) {
-            Logger.error("Couldn't delete account because there is no Dummy Account! (mail=" + ConfigFactory.load().getString("htwplus.dummy.mail") + ")");
+            Logger.error("Couldn't delete account because there is no Dummy Account! (mail=" + ConfigFactory.load().getString("socia.dummy.mail") + ")");
             throw new RuntimeException("Couldn't delete account because there is no Dummy Account!");
         }
 
