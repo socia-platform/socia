@@ -12,25 +12,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
 
-    <body id="hp-landingpage">
-        <div class="container-fluid">
+    <body>
 
-            <div id="hp-login" class="row" data-scrollspy-name="hp-login">
-                <div class="col-xs-12">
-                    <div id="hp-login-left" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-1">
-                        <div class="hp-landing-logo">
-                            <!-- <img src='@routes.Assets.at("images/logos/logo-white.svg")'/> -->
-                        </div>
-                            <!--
-                    <div id="hp-description">
-                        Das soziale Netzwerk für<br />deine Hochschule!
-                    </div>
-                    -->
-                    </div>
-                    <div id="hp-login-right" class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-4 col-md-offset-1">
-                    @controllers.Component.loginForm()
-                    </div>
-                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron" id="socia-login">
+                        <h1>Willkommen!</h1>
                         @if(flash.containsKey("success")) {
                             <div class="alert alert-success fade in">
                                 <button type="button" class="close fade out" data-dismiss="alert">&times;</button>
@@ -49,37 +37,27 @@
                                 @flash.get("error")
                             </div>
                         }
+                        @controllers.Component.loginForm()
                     </div>
                 </div>
             </div>
 
-
-        </div> <!-- /container -->
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1">
-                        <div id="hp-footer">
-                            <div id="hp-footer-links">
-                                <a href="@routes.Application.index()" data-toggle="modal">Home</a> |
-                                <a href="@routes.Application.imprint()">Impressum</a> |
-                                <a href="@routes.Application.privacy()">Datenschutz</a> |
-                                <a href="@routes.Application.feedback()">Feedback</a> |
-                                <a href="@routes.Application.feedback()">Kontakt</a> |
-                                <a href="@routes.Application.help()">Hilfe</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row" id="socia-landing-footer">
+                <div class="col-md-12" id="socia-landing-footer">
+                    <a href="@routes.Application.index()" data-toggle="modal">Home</a> |
+                    <a href="@routes.Application.imprint()">Impressum</a> |
+                    <a href="@routes.Application.privacy()">Datenschutz</a> |
+                    <a href="@routes.Application.feedback()">Feedback</a> |
+                    <a href="@routes.Application.feedback()">Kontakt</a> |
+                    <a href="@routes.Application.help()">Hilfe</a>
                 </div>
             </div>
-        </footer>
 
-        <script type="text/javascript" src="@routes.Application.javascriptRoutes()"></script>
+        </div>
+
         <script type="text/javascript" src='@routes.Assets.at("bower_components/jquery/dist/jquery.min.js")'></script>
         <script type="text/javascript" src='@routes.Assets.at("bootstrap/js/bootstrap.min.js")'></script>
-        <script type="text/javascript" src='@routes.Assets.at("bower_components/jQuery-linkify/dist/jquery.linkify.min.js")'></script>
-        <script type="text/javascript" src='@routes.Assets.at("javascripts/bootstrap-prettyfile.js")'></script>
+
 
     </body>
 

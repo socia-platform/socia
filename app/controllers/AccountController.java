@@ -47,7 +47,7 @@ public class AccountController extends BaseController {
         if (username.contains("@")) {
             return defaultAuthenticate(redirect);
         } else if (username.length() == 0) {
-            flash("error", "Also deine Matrikelnummer brauchen wir schon!");
+            flash("error", "Bitte gebe einen Username an!");
             return badRequest(landingpage.render());
         } else {
             return LdapAuthenticate(redirect);

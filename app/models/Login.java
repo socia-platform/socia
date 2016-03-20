@@ -12,7 +12,7 @@ public class Login {
     @Transactional
     public String validate() {
         if (AccountManager.authenticate(this.email, this.password) == null) {
-            return "Bitte melde dich mit deiner Matrikelnummer an.";
+            return "Ungültige Zugangsdaten!";
         }
         return null;
     }

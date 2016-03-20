@@ -1606,3 +1606,13 @@ a.adjust {
     min-height: 600px;
 }
 
+/*==== Socia Login ==*/
+
+#socia-login {
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+#socia-login h1 {
+    text-align: left;
+}
